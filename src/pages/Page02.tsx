@@ -5,26 +5,28 @@ import mobileAward from "../../public/assets/p02/mobile-app-of-the-year-by-entre
 
 function Page02() {
   return (
-    <div className="bg-green-900 h-screen grid grid-cols-5 text-white">
+    <div className="bg-green-900 h-[102vh] grid grid-cols-5 text-white 4bp:grid-cols-none">
       {/* ** LEFT SIDE */}
-      <div className="py-20 px-16 flex flex-col justify-between col-span-2">
-        <div className="w-full bg-green-900 flex items-center justify-between rounded-r-full ml-[170px] z-20">
+      <div className="py-20 px-16 flex flex-col justify-between col-span-2 4bp:p-0">
+        <div className="w-full bg-green-900 flex items-center justify-between rounded-r-full ml-[170px] z-20 4bp:hidden">
           <div />
 
-          <div className="flex items-center py-32 pr-36">
+          <div className="flex items-center py-32 pr-32 3bp:pr-28">
             <div className={`w-fit animate__animated animate__fadeInDown`}>
-              <p className="text-xl">gest Classifieds</p>
-              <h1 className="text-6xl font-semibold">East Asia</h1>
+              <p className="text-xl">Biggest Classifieds</p>
+              <h1 className="text-6xl font-semibold 3bp:text-5xl">East Asia</h1>
               <p className="text-xl text-right mt-2">Countries</p>
             </div>
           </div>
         </div>
 
         {/**/}
-        <div>
+        <div className="4bp:py-20 4bp:px-16 5bp:px-7">
           <div className={`mb-10 animate__animated animate__fadeInUp`}>
             <img className="h-20 mb-4" src={mobileAward} alt="Award" />
-            <h1 className="text-6xl font-semibold mb-3">Abc 234778</h1>
+            <h1 className="text-6xl font-semibold mb-3 3bp:text-5xl">
+              Abc 234778
+            </h1>
             <div className="text-sm">
               <p>We are the</p>
               <p>web development company</p>
@@ -48,14 +50,14 @@ function Page02() {
       </div>
 
       {/* ** RIGHT SIDE */}
-      <div className="bg-green-500 col-span-3 relative">
+      <div className="bg-green-500 col-span-3 relative 4bp:hidden">
         <img
-          className="absolute w-[340px] -bottom-12 right-24 animate__animated animate__fadeInUp"
+          className="absolute w-[340px] -bottom-12 right-24 animate__animated animate__fadeInUp 2bp:w-[300px] 2bp:right-18 3bp:right-[64px]"
           src={mobileUI1}
           alt=""
         />
         <img
-          className="absolute w-[390px] -bottom-20 right-[330px] animate__animated animate__fadeInUp"
+          className="absolute w-[390px] -bottom-20 right-[330px] animate__animated animate__fadeInUp 2bp:w-[320px] 2bp:right-[310px] 3bp:right-[250px]"
           src={mobileUI2}
           alt=""
         />

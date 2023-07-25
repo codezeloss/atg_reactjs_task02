@@ -5,25 +5,29 @@ import tabletUI from "../../public/assets/p04/erp-app-development-service.png";
 
 function Page04() {
   return (
-    <div className="bg-blue-900 h-screen grid grid-cols-5 text-white">
+    <div className="bg-blue-900 h-[102vh] grid grid-cols-5 text-white 4bp:grid-cols-none">
       {/* ** LEFT SIDE */}
-      <div className="py-20 px-16 flex flex-col justify-between col-span-2 z-30">
-        <div className="w-full bg-blue-900 flex items-center justify-between rounded-r-full ml-[170px] z-20">
+      <div className="py-20 px-16 flex flex-col justify-between col-span-2 z-30 4bp:p-0">
+        <div className="w-full bg-blue-900 flex items-center justify-between rounded-r-full ml-[170px] z-20 4bp:hidden">
           <div />
 
-          <div className="flex items-center py-32 pr-36">
+          <div className="flex items-center py-32 pr-32 3bp:pr-28">
             <div className={`w-fit animate__animated animate__fadeInDown`}>
               <p className="text-xl">Developing ERP Solution for</p>
-              <h1 className="text-6xl font-semibold">Text Headline</h1>
+              <h1 className="text-6xl font-semibold 3bp:text-5xl">
+                Text Headline
+              </h1>
               <p className="text-xl text-right mt-2">in furniture industry</p>
             </div>
           </div>
         </div>
 
         {/**/}
-        <div>
+        <div className="4bp:py-20 4bp:px-16 5bp:px-7">
           <div className={`mb-10 animate__animated animate__fadeInUp`}>
-            <h1 className="text-6xl font-semibold mb-3">Abc 678</h1>
+            <h1 className="text-6xl font-semibold mb-3 3bp:text-5xl">
+              Abc 678
+            </h1>
             <div className="text-sm">
               <p>Best since 2017</p>
               <p>We offer wide range of</p>
@@ -51,7 +55,7 @@ function Page04() {
       </div>
 
       {/* ** RIGHT SIDE */}
-      <div className="bg-blue-500 col-span-3 relative">
+      <div className="bg-blue-500 col-span-3 relative 4bp:hidden">
         <img
           className="w-full h-full object-cover absolute z-10"
           src={interior}

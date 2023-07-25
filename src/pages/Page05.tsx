@@ -5,25 +5,29 @@ import mobileUI2 from "../../public/assets/p05/veme-blockchain-app-developed.png
 
 function Page05() {
   return (
-    <div className="bg-violet-800 h-screen grid grid-cols-5 text-white">
+    <div className="bg-violet-800 h-[102vh] grid grid-cols-5 text-white 4bp:grid-cols-none">
       {/* ** LEFT SIDE */}
-      <div className="py-20 px-16 flex flex-col justify-between col-span-2">
-        <div className="w-full bg-violet-800 flex items-center justify-between rounded-r-full ml-[170px] z-20">
+      <div className="py-20 px-16 flex flex-col justify-between col-span-2 4bp:p-0">
+        <div className="w-full bg-violet-800 flex items-center justify-between rounded-r-full ml-[170px] z-20 4bp:hidden">
           <div />
 
-          <div className="flex items-center py-32 pr-36">
+          <div className="flex items-center py-32 pr-32 3bp:pr-28">
             <div className={`w-fit animate__animated animate__fadeInDown`}>
               <p className="text-xl">The Next </p>
-              <h1 className="text-6xl font-semibold">Blockchain</h1>
+              <h1 className="text-6xl font-semibold 3bp:text-5xl">
+                Blockchain
+              </h1>
               <p className="text-xl text-right mt-2">Revolution</p>
             </div>
           </div>
         </div>
 
         {/**/}
-        <div>
+        <div className="4bp:py-20 4bp:px-16 5bp:px-7">
           <div className={`mb-10 animate__animated animate__fadeInUp`}>
-            <h1 className="text-6xl font-semibold mb-3">Abc 234</h1>
+            <h1 className="text-6xl font-semibold mb-3 3bp:text-5xl">
+              Abc 234
+            </h1>
             <div className="text-sm">
               <p>We are the best web development</p>
               <p>company in the world</p>
@@ -50,14 +54,14 @@ function Page05() {
       </div>
 
       {/* ** RIGHT SIDE */}
-      <div className="bg-violet-950 col-span-3 relative">
+      <div className="bg-violet-950 col-span-3 relative 4bp:hidden">
         <img
-          className="w-80 absolute right-20 -top-24 animate__animated animate__fadeInDown"
+          className="w-80 absolute right-20 -top-24 animate__animated animate__fadeInDown 2bp:right-[100px] 2bp:w-72 3bp:-top-44"
           src={mobileUI1}
           alt=""
         />
         <img
-          className="w-80 absolute bottom-0 left-[250px] animate__animated animate__fadeInUp"
+          className="w-80 absolute bottom-0 left-[250px] animate__animated animate__fadeInUp 2bp:left-[110px] 2bp:w-72 3bp:-bottom-10"
           src={mobileUI2}
           alt=""
         />

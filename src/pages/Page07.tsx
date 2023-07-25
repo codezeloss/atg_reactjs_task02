@@ -6,13 +6,13 @@ import nasa from "../../public/assets/p07/nasa-mobile-app.png";
 
 function Page07() {
   return (
-    <div className="bg-indigo-950 h-screen grid grid-cols-5 text-white">
+    <div className="bg-indigo-950 h-[102vh] grid grid-cols-5 text-white 4bp:grid-cols-none">
       {/* ** LEFT SIDE */}
-      <div className="py-20 px-16 flex flex-col justify-between col-span-2">
-        <div className="w-full bg-indigo-950 flex items-center justify-between rounded-r-full ml-[170px] z-20">
+      <div className="py-20 px-16 flex flex-col justify-between col-span-2 4bp:p-0">
+        <div className="w-full bg-indigo-950 flex items-center justify-between rounded-r-full ml-[170px] z-20 4bp:hidden">
           <div />
 
-          <div className="flex items-center py-32 pr-36">
+          <div className="flex items-center py-32 pr-32 3bp:pr-28">
             <div className={`w-fit animate__animated animate__fadeInDown`}>
               <p className="text-xl mb-1">Powered by advance</p>
               <img className="" src={nasa} alt="" />
@@ -22,9 +22,11 @@ function Page07() {
         </div>
 
         {/**/}
-        <div>
+        <div className="4bp:py-20 4bp:px-16 5bp:px-7">
           <div className={`mb-10 animate__animated animate__fadeInUp`}>
-            <h1 className="text-6xl font-semibold mb-3">Abc 345</h1>
+            <h1 className="text-6xl font-semibold mb-3 3bp:text-5xl">
+              Abc 345
+            </h1>
             <div className="text-sm">
               <p>We are the</p>
               <p>web development company</p>
@@ -52,14 +54,14 @@ function Page07() {
       </div>
 
       {/* ** RIGHT SIDE */}
-      <div className="bg-indigo-900 col-span-3 relative">
+      <div className="bg-indigo-900 col-span-3 relative 4bp:hidden">
         <img
-          className="w-72 absolute -top-20 right-32 animate__animated animate__fadeInDown"
+          className="w-72 absolute -top-20 right-32 animate__animated animate__fadeInDown 2bp:right-16 3bp:-top-32"
           src={mobileUI2}
           alt=""
         />
         <img
-          className="w-[370px] absolute left-[180px] bottom-10 animate__animated animate__fadeInUp"
+          className="w-[370px] absolute left-[180px] bottom-10 animate__animated animate__fadeInUp 2bp:left-[80px] 3bp:left-[50px] 3bp:-bottom-5"
           src={mobileUI1}
           alt=""
         />

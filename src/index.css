@@ -13,7 +13,6 @@
 body {
     font-family: "Ubuntu", sans-serif;
     position: relative;
-    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -26,4 +25,6 @@ a {
 
 
 }
+
+
 

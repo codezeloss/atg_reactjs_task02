@@ -8,25 +8,29 @@ import mobileApp2 from "../../public/assets/p01/ux-strategy-for-mobile-app-devlo
 
 function Page01() {
   return (
-    <div className="bg-slate-900 h-screen grid grid-cols-5 text-white">
+    <div className="bg-slate-900 h-[102vh] grid grid-cols-5 text-white 4bp:grid-cols-none">
       {/* ** LEFT SIDE */}
-      <div className="py-20 px-16 flex flex-col justify-between col-span-2">
-        <div className="w-full bg-slate-900 flex items-center justify-between rounded-r-full ml-[200px] z-20">
+      <div className="py-20 px-16 flex flex-col justify-between col-span-2 4bp:p-0">
+        <div className="w-full bg-slate-900 flex items-center justify-between rounded-r-full ml-[200px] z-20 4bp:hidden">
           <div />
 
-          <div className="flex items-center py-32 pr-36">
-            <div className={`w-fit  animate__animated animate__fadeInDown`}>
+          <div className="flex items-center py-32 pr-28 3bp:pr-28">
+            <div className={`w-full  animate__animated animate__fadeInDown`}>
               <p className="text-xl">Redefining</p>
-              <h1 className="text-6xl font-semibold">UX Strategy</h1>
+              <h1 className="text-6xl font-semibold 3bp:text-5xl">
+                UX Strategy
+              </h1>
               <p className="text-xl text-right mt-2">and UI design</p>
             </div>
           </div>
         </div>
 
         {/**/}
-        <div>
-          <div className={`mb-10 animate__animated animate__fadeInUp`}>
-            <h1 className="text-6xl font-semibold mb-3">Abc 456</h1>
+        <div className="4bp:py-20 4bp:px-16 5bp:px-7">
+          <div className={`mb-10 animate__animated animate__fadeInUp `}>
+            <h1 className="text-6xl font-semibold mb-3 3bp:text-5xl">
+              Abc 456
+            </h1>
             <div className="text-sm">
               <p>We are the</p>
               <p>web development company</p>
@@ -54,7 +58,7 @@ function Page01() {
       </div>
 
       {/* ** RIGHT SIDE */}
-      <div className="bg-slate-950 col-span-3 relative">
+      <div className="bg-slate-950 col-span-3 relative 4bp:hidden">
         <img
           className="absolute left-0 -top-20 animate__animated animate__fadeInDown"
           src={pizzaBox}
@@ -66,7 +70,7 @@ function Page01() {
           alt=""
         />
         <img
-          className="absolute w-80 right-[150px] top-[100px] animate__animated animate__fadeInDown"
+          className="absolute w-80 right-[150px] top-[100px] animate__animated animate__fadeInDown 2bp:w-64 3bp:right-[100px]"
           src={mobileApp2}
           alt=""
         />
@@ -76,7 +80,7 @@ function Page01() {
           alt=""
         />
         <img
-          className="absolute w-80 bottom-0 left-20 animate__animated animate__fadeInUp"
+          className="absolute w-80 bottom-0 left-20 animate__animated animate__fadeInUp 2bp:w-64 2bp:left-32 3bp:left-16"
           src={mobileApp1}
           alt=""
         />
