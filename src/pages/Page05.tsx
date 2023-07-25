@@ -1,6 +1,7 @@
-import svgPaths from "../../public/assets/svg_with_paths.svg";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import mobileUI1 from "../../public/assets/p05/veme-app-ui-design.png";
+import mobileUI2 from "../../public/assets/p05/veme-blockchain-app-developed.png";
 
 function Page05() {
   return (
@@ -10,9 +11,9 @@ function Page05() {
         <div className="w-full bg-violet-800 flex items-center justify-between rounded-r-full ml-[170px] z-20">
           <div />
 
-          <div className="flex items-center">
-            <div className="w-fit py-20 pr-16">
-              <p className="text-xl">The Next Big</p>
+          <div className="flex items-center py-32 pr-36">
+            <div className={`w-fit animate__animated animate__fadeInDown`}>
+              <p className="text-xl">The Next </p>
               <h1 className="text-6xl font-semibold">Blockchain</h1>
               <p className="text-xl text-right mt-2">Revolution</p>
             </div>
@@ -21,7 +22,7 @@ function Page05() {
 
         {/**/}
         <div>
-          <div className="mb-10">
+          <div className={`mb-10 animate__animated animate__fadeInUp`}>
             <h1 className="text-6xl font-semibold mb-3">Abc 234</h1>
             <div className="text-sm">
               <p>We are the best web development</p>
@@ -29,7 +30,9 @@ function Page05() {
             </div>
           </div>
 
-          <div className="flex justify-between items-center text-lg">
+          <div
+            className={`flex justify-between items-center text-lg animate__animated animate__fadeInUp`}
+          >
             <button type="button" className="flex items-center gap-2">
               <p className="">View Case Study</p>
               <HiArrowNarrowRight />
@@ -47,8 +50,17 @@ function Page05() {
       </div>
 
       {/* ** RIGHT SIDE */}
-      <div className="bg-violet-950 col-span-3">
-        <div className="h-screen w-full" />
+      <div className="bg-violet-950 col-span-3 relative">
+        <img
+          className="w-80 absolute right-20 -top-24 animate__animated animate__fadeInDown"
+          src={mobileUI1}
+          alt=""
+        />
+        <img
+          className="w-80 absolute bottom-0 left-[250px] animate__animated animate__fadeInUp"
+          src={mobileUI2}
+          alt=""
+        />
       </div>
     </div>
   );

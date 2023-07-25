@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "animate.css";
 import Page01 from "./pages/Page01.tsx";
 import Page02 from "./pages/Page02.tsx";
 import Page03 from "./pages/Page03.tsx";
@@ -12,13 +13,13 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path={"/page-01"} element={<Page01 />} />
-          <Route path={"/page-02"} element={<Page02 />} />
-          <Route path={"/page-03"} element={<Page03 />} />
-          <Route path={"/page-04"} element={<Page04 />} />
-          <Route path={"/page-05"} element={<Page05 />} />
-          <Route path={"/page-06"} element={<Page06 />} />
-          <Route path={"/page-07"} element={<Page07 />} />
+          <Route path="/page-01" element={<Page01 />} />
+          <Route path="/page-02" element={<Page02 />} />
+          <Route path="/page-03" element={<Page03 />} />
+          <Route path="/page-04" element={<Page04 />} />
+          <Route path="/page-05" element={<Page05 />} />
+          <Route path="/page-06" element={<Page06 />} />
+          <Route path="/page-07" element={<Page07 />} />
         </Routes>
       </BrowserRouter>
     </>

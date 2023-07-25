@@ -1,17 +1,18 @@
-import svgPaths from "../../public/assets/svg_with_paths.svg";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import interior from "../../public/assets/p04/interior.jpg";
+import tabletUI from "../../public/assets/p04/erp-app-development-service.png";
 
 function Page04() {
   return (
-    <div className="bg-blue-700 h-screen grid grid-cols-5 text-white">
+    <div className="bg-blue-900 h-screen grid grid-cols-5 text-white">
       {/* ** LEFT SIDE */}
-      <div className="py-20 px-16 flex flex-col justify-between col-span-2">
-        <div className="w-full bg-blue-700 flex items-center justify-between rounded-r-full ml-[170px] z-20">
+      <div className="py-20 px-16 flex flex-col justify-between col-span-2 z-30">
+        <div className="w-full bg-blue-900 flex items-center justify-between rounded-r-full ml-[170px] z-20">
           <div />
 
-          <div className="flex items-center">
-            <div className="w-fit py-20 pr-16">
+          <div className="flex items-center py-32 pr-36">
+            <div className={`w-fit animate__animated animate__fadeInDown`}>
               <p className="text-xl">Developing ERP Solution for</p>
               <h1 className="text-6xl font-semibold">Text Headline</h1>
               <p className="text-xl text-right mt-2">in furniture industry</p>
@@ -21,7 +22,7 @@ function Page04() {
 
         {/**/}
         <div>
-          <div className="mb-10">
+          <div className={`mb-10 animate__animated animate__fadeInUp`}>
             <h1 className="text-6xl font-semibold mb-3">Abc 678</h1>
             <div className="text-sm">
               <p>Best since 2017</p>
@@ -30,7 +31,9 @@ function Page04() {
             </div>
           </div>
 
-          <div className="flex justify-between items-center text-lg">
+          <div
+            className={`flex justify-between items-center text-lg animate__animated animate__fadeInUp`}
+          >
             <button type="button" className="flex items-center gap-2">
               <p className="">View Case Study</p>
               <HiArrowNarrowRight />
@@ -48,8 +51,17 @@ function Page04() {
       </div>
 
       {/* ** RIGHT SIDE */}
-      <div className="bg-blue-500 col-span-3">
-        <div className="h-screen w-full" />
+      <div className="bg-blue-500 col-span-3 relative">
+        <img
+          className="w-full h-full object-cover absolute z-10"
+          src={interior}
+          alt=""
+        />
+        <img
+          className="object-cover absolute z-20 animate__animated animate__fadeInUp"
+          src={tabletUI}
+          alt=""
+        />
       </div>
     </div>
   );
