@@ -57,7 +57,7 @@ function Page07() {
             </button>
 
             <Link
-              to="/page-01"
+              to="/"
               type="button"
               className="tracking-widest font-medium"
             >

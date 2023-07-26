@@ -56,7 +56,7 @@ const Scrollable = () => {
   return (
     <div className="">
       <Routes>
-        <Route path="/page-01" element={<Page01 />} />
+        <Route path="/" element={<Page01 />} />
         <Route path="/page-02" element={<Page02 />} />
         <Route path="/page-03" element={<Page03 />} />
         <Route path="/page-04" element={<Page04 />} />

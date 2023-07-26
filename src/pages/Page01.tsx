@@ -26,7 +26,7 @@ function Page01() {
               <div className="absolute right-[11rem] -top-[4rem] z-40">
                 <div className="circle p1"></div>
                 <div>
-                  <NavLink to="/page-01" className="pageBtn active"></NavLink>
+                  <NavLink to="/" className="pageBtn active"></NavLink>
                   <NavLink to="/page-02" className="pageBtn"></NavLink>
                   <NavLink to="/page-03" className="pageBtn"></NavLink>
                   <NavLink to="/page-04" className="pageBtn"></NavLink>
