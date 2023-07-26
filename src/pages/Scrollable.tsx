@@ -15,6 +15,7 @@ const Scrollable = () => {
   const currentPath = location.pathname;
 
   useEffect(() => {
+    // **
     const handleTouchMove = () => {
       let scrollY = window.scrollY;
       console.log(scrollY);
@@ -43,12 +44,14 @@ const Scrollable = () => {
         window.scrollTo(0, 0);
       }
     };
+
     window.addEventListener("scroll", handleTouchMove);
     // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleTouchMove);
     };
   }, [currentPath]);
+
 
   return (
     <div className="">
